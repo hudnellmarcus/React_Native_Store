@@ -18,7 +18,7 @@ const Stack = createStackNavigator();
 type TabNavigationProps = BottomTabNavigationProp<RootStackParamsList>; 
 
 // TAB_ICON and following function allow for dynamic changing of the bottom navigation bar. Search through https://icons.expo.fyi/ and filter by 'Ionicons' to find the name of the corresponding icon to use 
-
+/* I always leave this note in so that I can remember where to search for the icons */
 const TAB_ICON: { [key: string]: string} = {
     Home: "home",
     Cart: "cart",
