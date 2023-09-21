@@ -21,6 +21,7 @@ My quick attempt at a full-stack bookstore application!
 # Known Bugs
 
 - Decreasing quantity in cart will remove item completely no matter the quantity.
+- Add to cart swithing to 'out of stock' based on quantity in stock should be improved, though you cannot currently add more items to cart thn are available in stock. 
 
 # Improvements to be made 
 
