@@ -43,12 +43,12 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        width: 50, // Set your desired width here
-        height: 50, // Set your desired height here
-        backgroundColor: 'blue', // Customize the button color
+        width: 50,
+        height: 50, 
+        backgroundColor: 'blue',
         justifyContent: 'center',
         alignItems: 'center',
-        marginVertical: 10, // Adjust spacing between buttons
+        marginVertical: 10, 
       },
 });
 
