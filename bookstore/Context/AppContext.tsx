@@ -21,7 +21,7 @@ export interface CartItem {
   quantityInStock: number;
 }
 
-// Create the context
+// context
 interface AppContextType {
   state: AppState;
   dispatch: React.Dispatch<AppAction>;
@@ -77,7 +77,6 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
   }
 };
 
-// Create the AppProvider component
 interface AppProviderProps {
   children: ReactNode;
 }
