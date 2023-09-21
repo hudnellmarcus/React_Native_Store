@@ -97,14 +97,6 @@ const styles = StyleSheet.create({
     margin: 20,
     color: "red",
   },
-  availabilityContainer: {
-    marginBottom: 20,
-    alignItems: "center",
-  },
-  availability: {
-    flexDirection: "row",
-    marginBottom: 10,
-  },
 });
 
 export default SingleBook;
