@@ -1,0 +1,69 @@
+[
+	{
+		"_id": "6509f00a15de465effb48181",
+		"title": "A Man Called Ove",
+		"author": "Fredrik Backman",
+		"genre": "Fiction",
+		"price": 18.99,
+		"quantityInStock": 2,
+		"photo": "https://img1.od-cdn.com/ImageType-400/5054-1/2D9/ACE/3A/%7B2D9ACE3A-15AE-420D-AF99-D2C54B6AA4DC%7DImg400.jpg",
+		"inStock": true,
+		"__v": 0
+	},
+
+	{
+		"_id": "650b290d4b48840f013cd682",
+		"title": "The Name of the Wind",
+		"author": "Patrick ROthfuss",
+		"genre": "Fantasy",
+		"price": 17.99,
+		"quantityInStock": 3,
+		"photo": "https://static.audiobooksnow.com/jackets/large/3/0/9/9781423389309.jpg",
+		"inStock": true,
+		"__v": 0
+	},
+	{
+		"_id": "650b292c4b48840f013cd685",
+		"title": "Shantaram",
+		"author": "Gregory David Roberts",
+		"genre": "Fiction",
+		"price": 19.99,
+		"quantityInStock": 1,
+		"photo": "https://books.boomerangbooks.com.au/Large/208/9781920769208.jpg",
+		"inStock": true,
+		"__v": 0
+	},
+	{
+		"_id": "650b29384b48840f013cd687",
+		"title": "The Hobbit",
+		"author": "J.R.R. Tolkien",
+		"genre": "Fantasy",
+		"price": 15.99,
+		"quantityInStock": 2,
+		"photo": "https://images-na.ssl-images-amazon.com/images/I/51l+llxFBML._SY344_BO1,204,203,200_.jpg",
+		"inStock": true,
+		"__v": 0
+	},
+	{
+		"_id": "650b29444b48840f013cd689",
+		"title": "The Poisonwood Bible",
+		"author": "Barbara Kingsolver",
+		"genre": "Fiction",
+		"price": 19.99,
+		"quantityInStock": 3,
+		"photo": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644073807l/7244.jpg",
+		"inStock": true,
+		"__v": 0
+	},
+	{
+		"_id": "650b29534b48840f013cd68b",
+		"title": "The Wise Man's Fear",
+		"author": "Patrick Rothfuss",
+		"genre": "Fantasy",
+		"price": 9.99,
+		"quantityInStock": 2,
+		"photo": "https://1.bp.blogspot.com/-7B_-G0wxBow/TfPGdPW311I/AAAAAAAAEVE/liIMZvq6Vr8/s400/wise-mans-fear.jpg",
+		"inStock": true,
+		"__v": 0
+	}
+]
