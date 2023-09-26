@@ -53,7 +53,9 @@ const ProductContainer: React.FC = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        padding: 5,
+        marginBottom: 1
     }
 })
 

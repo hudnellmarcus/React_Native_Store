@@ -1,12 +1,10 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 import { createBottomTabNavigator, BottomTabNavigationProp, BottomTabScreenProps, BottomTabNavigationOptions } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from '@react-navigation/stack';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { NavigationContainer, RouteProp } from '@react-navigation/native';
 import { RootStackParamsList } from '../types/types';
 import CartNavigator from './CartNavigator';
-import UserNavigator from './UserNavigator';
 import HomeNavigator from './HomeNavigator';
 
 
@@ -22,12 +20,12 @@ type TabNavigationProps = BottomTabNavigationProp<RootStackParamsList>;
 const TAB_ICON: { [key: string]: string} = {
     Home: "home",
     Cart: "cart",
-    User: "person"
+  //  User: "person"
 };
 
 type HomeStackScreenRouteProp = RouteProp<RootStackParamsList, 'Home'>;
 type CartStackScreenRouteProp = RouteProp<RootStackParamsList, 'Cart'>;
-type UserStackScreenRouteProp = RouteProp<RootStackParamsList, 'User'>;
+/*type UserStackScreenRouteProp = RouteProp<RootStackParamsList, 'User'>; */
 
 
 const createScreenOptions = ({ route }: BottomTabScreenProps<any>) => {
@@ -49,7 +47,7 @@ export default function Main() {
         <Tab.Navigator screenOptions={createScreenOptions}>
             <Tab.Screen name="Home" component={HomeNavigator}/>
             <Tab.Screen name="Cart" component={CartNavigator}/>
-            <Tab.Screen name="User" component={HomeNavigator}/> 
+        {  /*  <Tab.Screen name="User" component={HomeNavigator}/> */}
         </Tab.Navigator>
     );
 };

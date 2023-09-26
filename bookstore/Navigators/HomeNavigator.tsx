@@ -5,10 +5,12 @@ import ProductContainer from "../screens/Products/ProductContainer";
 import SingleBook from "../screens/Products/SingleBook";
 import { Product } from "../screens/Products/ProductContainer";
 
+
 const Stack = createStackNavigator()
 
+
 const  HomeNavigator = () => {
-    
+   
     return (
         <Stack.Navigator>
             <Stack.Screen 
@@ -22,7 +24,7 @@ const  HomeNavigator = () => {
                 name={'BookDetail'}
                 component={SingleBook as React.FC<{}>}
                 options={{
-                    headerShown: false
+                    
                 }}
             />
         </Stack.Navigator>

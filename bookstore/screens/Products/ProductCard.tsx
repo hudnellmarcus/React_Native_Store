@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   StyleSheet,
   View,
@@ -13,7 +13,7 @@ import { useAppContext } from "../../Context/AppContext";
 import { useCart } from "../../Hooks/useCart";
 import { SafeArea } from "../../safe-area-component";
 
-var { width } = Dimensions.get("window");
+
 
 interface ProductCardProps {
   product: Product;
@@ -22,19 +22,21 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { title, author, price, photo, quantityInStock } = product;
   const { addToCart } = useCart(); 
-    
- 
+  const { state } = useAppContext(); 
+  
   return (
 
     <View style={styles.container}>
-      <View style={styles.card} />
-      <Image style={styles.image} source={{ uri: photo }} />
+      
+      <Image style={
+             {resizeMode: 'contain', height: 125, width: 100, marginTop: 40}
+      } source={{ uri: photo }} />
       <Text style={styles.title}>
         {title.length > 15 ? title.substring(0, 15 - 3) + "..." : title}
       </Text>
       <Text style={styles.price}>${price}</Text>
     {
-        quantityInStock > 0 ? (
+        state.quantityInStock[product._id] > 0 ? (
             <View style={{ marginBottom: 60 }}>
                 <Button 
                 onPress={() => {addToCart(product)}}
@@ -51,34 +53,41 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
 const styles = StyleSheet.create({
   container: {
-    width: width / 2 - 20,
-    height: 300,
-    padding: 25,
-    marginTop: 55,
-    marginLeft: 10,
+    flex: 1,
+  //  width: width / 2 - 20,
+   height: 300,
+  //  padding: 25,
+   // marginTop: -10,
+    //marginBottom: -10,
+  //x cvc  marginLeft: 10,
     alignItems: "center",
     elevation: 8,
     backgroundColor: "white",
+   // borderColor: "black",
+   // borderWidth: 3
   },
+  imageContainer: {
+
+  },
+
   image: {
-    width: width / 2 - 20 - 10,
-    height: width / 2 - 20 - 30,
     backgroundColor: "transparent",
-    position: "absolute",
-    top: -60,
-    
+    position: "absolute",  
   },
   card: {
-    marginBottom: 10,
+    marginTop: -100, 
+    marginBottom: 0,
     height: '50%',
     backgroundColor: "transparent",
-    width: width / 2 - 20 - 10,
-    padding: 50
+    padding: 30,
+    borderColor: "black",
+   borderWidth: 2
   },
   title: {
     fontWeight: "bold",
     fontSize: 14,
     textAlign: "center",
+    padding: 10
   },
   price: {
     fontSize: 20,

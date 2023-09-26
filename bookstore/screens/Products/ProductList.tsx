@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity, View, Dimensions, StyleSheet } from "react-native";
 import { Product } from "./ProductContainer";
 import ProductCard from "./ProductCard";
-var { width } = Dimensions.get("window");
+
 
 interface ProductListProps {
   item: Product;
@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
         height: '80%',
         justifyContent: 'center',
         alignItems: 'center',
-        flexDirection: "row"
+        flexDirection: "row",
+        padding: 5
     },
     card: {
         flex: 1,

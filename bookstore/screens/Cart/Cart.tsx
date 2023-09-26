@@ -31,8 +31,11 @@ const Cart = () => {
     const cartItem = state.cart.find((item) => item._id === itemId);
 
     if (cartItem && cartItem.quantity > 1) {
-      dispatch({ type: "REMOVE_FROM_CART", payload: itemId });
-    }
+      dispatch({ type: "DECREMENT_CART_ITEM", payload: itemId });
+      state.quantityInStock[itemId] += cartItem.quantity
+
+    } else if (cartItem && cartItem.quantity === 1)
+      dispatch({ type: "REMOVE_FROM_CART", payload: itemId}); 
   };
 
   const onIncrememt = (itemId: string) => {
@@ -41,7 +44,7 @@ const Cart = () => {
     if (cartItem)
       dispatch({
         type: "ADD_TO_CART",
-        payload: { ...cartItem, quantity: cartItem.quantity + 1 },
+        payload: { ...cartItem, quantity: cartItem.quantity + 1, quantityInStock: cartItem.quantityInStock - 1},
       });
   };
 
